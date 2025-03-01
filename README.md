@@ -46,6 +46,13 @@ Digital twin technology is one of the directions in my research that is closest 
 
 Structures are continuously subjected to the combined effects of external environments and loads over time, which inevitably leads to a gradual decline in their performance. The advantage of digital twin technology lies in its ability to integrate **time-varying stochastic state-space models** with real-time data, updating the structural state in real-time through simulation and feedback from the data, while predicting the future behavior of the structure. This method can effectively support decision-making in structural health monitoring, ensuring the safety and reliability of structures in complex environments.
 
+<p align="center">
+  <img src="system_modeling.png" alt="A schematic representation of the minimal realization time delay Koopman system identification algorithm process." width="60%" />
+</p>
+
+
+
+
 ### 6. **Modal Identification (Koopman Modal Decomposition)**  
 Modal identification is an important aspect of structural health monitoring. This method helps analyze and identify the dynamic behavior of structures under different load conditions. Through modal analysis, we can extract information such as the structure's natural frequencies, mode shapes, and damping characteristics, all of which are critical for assessing the health of the structure. In fact, this can be viewed as a special case of Koopman modal decomposition.
 
