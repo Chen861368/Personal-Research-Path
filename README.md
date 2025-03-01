@@ -1,32 +1,46 @@
 # Personal Introduction
 
-I am a PhD student at **Harbin Institute of Technology (Shenzhen)**, enrolled in September 2023. My doctoral thesis is currently focused on **Structural Health Monitoring**. My research mainly focuses on the following areas:
+I am a PhD student at **Harbin Institute of Technology (Shenzhen)**, enrolled in September 2023. My doctoral research focuses on **Structural Health Monitoring (SHM)**, a rapidly growing interdisciplinary field that integrates concepts from mechanics, aerospace engineering, civil engineering, control systems, and signal processing. The primary objective of SHM is to assess and ensure the structural integrity of engineering systems, particularly in critical infrastructure such as bridges, buildings, and offshore structures. 
+Currently, my research is concentrated in the following key areas:
 
-- Data-driven linear/nonlinear system identification
-- Model order reduction
-- Online system state estimation
-- Modal identification
+- **Data-driven linear/nonlinear system identification**: I am exploring methods for identifying the dynamics of structures using data, including both linear and nonlinear systems. This work aims to enhance the accuracy and reliability of system models by using available observational data.
 
-The primary theoretical foundation of my work is the Koopman operator and optimal estimation (statistical signal processing). However, while the theory is elegant, it does not always translate smoothly into practical applications. Therefore, in practice, the algorithms I design rely heavily on convex optimization methods for implementation.
+- **Model order reduction**: This involves developing techniques to simplify complex system models without significantly compromising accuracy, allowing for more efficient simulations and real-time applications.
+
+- **Online system state estimation**: My research also addresses the challenge of continuously estimating the state of a system in real-time using sensor data, which is crucial for proactive maintenance and performance evaluation.
+
+- **Modal identification**: I focus on identifying the modal parameters of structures, such as natural frequencies and mode shapes, which are essential for understanding their dynamic behavior and health status.
+
+The theoretical foundation of my work is based on the **Koopman operator** and **optimal estimation** techniques, rooted in applied mathematics and statistical signal processing. One focuses on solving nonlinear problems, while the other addresses robustness against noise. While these theories offer elegant mathematical frameworks, translating them into practical applications can be challenging due to the fact that real-world observation data is often discrete and typically lacks accurate prior physical information. To bridge the gap between theory and practice, I employ **convex optimization methods** to develop efficient algorithms that can be applied to real-world problems in SHM.
 
 ---
 
 ## Key Research Directions and Technical Approaches
 
 ### 1. **System Identification Based on Stochastic Subspace Methods**
-This approach is based on classical techniques from the 1980s, primarily relying on the orthogonality between the signal subspace and the noise subspace to remove noise and achieve high-precision system identification. This method has broad applications in high-precision system modeling and signal processing.
+This approach originally stems from control theory, primarily relying on the orthogonality between the signal subspace and the noise subspace to eliminate noise and achieve high-precision system identification. By assuming the noise is white noise and that the system state vector and noise exhibit ergodic properties, this method guarantees convergence to the state-space equation estimate with completely removed noise when the monitoring data is infinite.
+
+I apply this method to data-driven modeling of monitored structures, and it can also have broad applications in high-precision system modeling and signal processing. This approach enables the extraction of true system dynamics from noisy data, providing an effective solution for engineering problems that require precise identification and control.
 
 ### 2. **Nonlinear System Identification Based on Koopman Operator Theory**
-This method relies on the **Koopman operator theory**, where the state vector of a dynamic system is mapped into a high-dimensional (and potentially infinite-dimensional) space, seeking a linear representation within that space. This approach is similar to Kernel methods and is highly effective in nonlinear system identification, and it is currently emerging as a cutting-edge research topic.
+This method relies on the Koopman operator theory, where the state vector of a dynamic system is mapped into a high-dimensional (and potentially infinite-dimensional) space, seeking a linear representation within that space. This approach is similar to Kernel methods, and I consider it an extension of classical linear state-space models. Since state-space equations can also be viewed as a method of mapping monitoring data into high-dimensional space, the entire process is linear, but the observation function of the Koopman operator can be arbitrary. Given its strong mathematical foundation, this method provides new ways to interpret the dynamic characteristics of systems and is well-suited for integration with control methods like Model Predictive Control (MPC).
+
+I use it to solve some very complex system identification problems with highly nonlinear characteristics. It is highly effective in nonlinear system identification and is currently emerging as a popular and modern research topic. This method has proven highly effective for solving complex nonlinear systems that are difficult to address with traditional approaches. It provides a powerful tool for analyzing and controlling dynamic systems, with vast potential for real-world applications. Particularly in fields such as aerospace, robotics, and intelligent transportation, it holds great promise for advancing system identification and control strategies.
 
 ### 3. **Optimal Estimation**
-Although I am still delving into optimal estimation theory, its core idea is to estimate parameters from noisy signals to recover the signal accurately. The **Kalman filter** is a classic example of this approach. In practice, noise is typically assumed to be white noise, and its characteristics need to be estimated, a process that can sometimes be subjective. In recent years, deep learning has gradually replaced traditional methods in signal processing, but many challenges remain in this area that are worth exploring.
+In practice, monitoring data is often contaminated by noise. To evaluate the statistical performance of estimators derived from such data, it is essential to model the noise.
+Optimal estimation is a mathematical technique used to estimate the system state, with the aim of achieving the most accurate estimation using available observation data, system models, and noise characteristics. The objective is to minimize the variance of the estimation error, typically achieved through methods like least squares and Kalman filtering. Optimal estimation is widely used in dynamic systems for real-time state tracking and has broad applications in fields such as control systems, signal processing, and communications.
 
-### 4. **Data-driven Model Order Reduction**
-Model order reduction is a popular research direction in fields like computational fluid dynamics, especially in the context of high-dimensional fluid data generated from simulations. This technique effectively reduces computational load. However, for real-world sensor sampling systems, whether high-dimensional data can be obtained is still uncertain. Additionally, ensuring the generalization ability of data-driven reduction methods remains a major challenge, particularly under different boundary conditions and initial conditions.
+In recent years, however, this approach may have lost its prominence, largely due to the powerful nonlinear modeling capabilities of deep neural networks and the increasing computational support from companies like NVIDIA. Research focus has increasingly shifted toward deep learning. In such cases, analyzing the statistical performance of estimators becomes challenging. Nevertheless, I continue to analyze it through optimal estimation theory because, for certain applications, the well-established mathematical foundation of optimal estimation provides a robust framework for understanding and enhancing estimation accuracy.
 
-### 5. **Online System State Estimation (Digital Twin)**
-Digital twin technology is one of the directions of my research that is closest to practical engineering applications. Structural health monitoring systems typically accumulate vast amounts of data, which contain important information about the performance changes of the structure. Therefore, effectively extracting this potential structural performance information from the data is a key problem in my research. To achieve this, I primarily adopt physics-based models rather than relying solely on deep learning, which helps better interpret the physical mechanisms behind the data.
+### 4. **Data-driven Model Order Reduction**  
+Model order reduction is a popular research direction in fields such as computational fluid dynamics, especially in the context of high-dimensional fluid data generated from simulations. This technique effectively reduces computational load. However, for real-world sensor sampling systems, the ability to obtain high-dimensional data remains uncertain. Additionally, ensuring the generalization ability of data-driven reduction methods is still a major challenge, particularly under different boundary conditions and initial conditions.
+In my research, I am focused on addressing how to apply data-driven reduction techniques in different physical environments and complex real-world conditions. This requires maintaining accuracy while adapting to various system settings. Therefore, a core issue in my research is developing effective data processing methods to reduce model complexity while ensuring the applicability and stability of the model.
+
+### 5. **Online System State Estimation (Digital Twin)**  
+Digital twin technology is one of the directions in my research that is closest to practical engineering applications. Structural health monitoring systems typically accumulate vast amounts of data, which contain important information about structural performance changes. Therefore, effectively extracting this potential structural performance information from the data is a key issue in my research. To achieve this, I primarily adopt **time-varying stochastic state-space models** rather than relying solely on deep learning. This approach helps better interpret the physical mechanisms behind the data, thereby improving the accuracy and reliability of the monitoring system.
+
+Structures are continuously subjected to the combined effects of external environments and loads over time, which inevitably leads to a gradual decline in their performance. The advantage of digital twin technology lies in its ability to integrate **time-varying stochastic state-space models** with real-time data, updating the structural state in real-time through simulation and feedback from the data, while predicting the future behavior of the structure. This method can effectively support decision-making in structural health monitoring, ensuring the safety and reliability of structures in complex environments.
 
 ### 6. **Modal Identification (Koopman Modal Decomposition)**
 Modal identification is an essential aspect of structural health monitoring, commonly referred to as **Koopman modal decomposition**. This method helps analyze and identify the dynamic behavior of structures under different load conditions.
