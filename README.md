@@ -1,6 +1,8 @@
 # Personal Introduction
 
-I am a PhD student at **Harbin Institute of Technology (Shenzhen)**, enrolled in September 2023. My doctoral research focuses on **Structural Health Monitoring (SHM)**, a rapidly growing interdisciplinary field that integrates concepts from mechanics, aerospace engineering, civil engineering, control systems, and signal processing. The primary objective of SHM is to assess and ensure the structural integrity of engineering systems, particularly in critical infrastructure such as bridges, buildings, and offshore structures. 
+I am a PhD student at **Harbin Institute of Technology (Shenzhen)**, enrolled in September 2023. My email is 23B954005@stu.hit.edu.cn, and my Google Scholar profile can be found at [https://scholar.google.com.hk/citations?user=d9qEdQIAAAAJ&hl=zh-CN](https://scholar.google.com.hk/citations?user=d9qEdQIAAAAJ&hl=zh-CN).
+
+My doctoral research focuses on **Structural Health Monitoring (SHM)**, a rapidly growing interdisciplinary field that integrates concepts from mechanics, aerospace engineering, civil engineering, control systems, and signal processing. The primary objective of SHM is to assess and ensure the structural integrity of engineering systems, particularly in critical infrastructure such as bridges, buildings, and offshore structures. 
 Currently, my research is concentrated in the following key areas:
 
 - **Data-driven linear/nonlinear system identification**: I am exploring methods for identifying the dynamics of structures using data, including both linear and nonlinear systems. This work aims to enhance the accuracy and reliability of system models by using available observational data.
