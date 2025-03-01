@@ -38,6 +38,7 @@ In recent years, however, this approach may have lost its prominence, largely du
 
 ### 4. **Data-driven Model Order Reduction**  
 Model order reduction is a popular research direction in fields such as computational fluid dynamics, especially in the context of high-dimensional fluid data generated from simulations. This technique effectively reduces computational load. However, for real-world sensor sampling systems, the ability to obtain high-dimensional data remains uncertain. Additionally, ensuring the generalization ability of data-driven reduction methods is still a major challenge, particularly under different boundary conditions and initial conditions.
+
 In my research, I am focused on addressing how to apply data-driven reduction techniques in different physical environments and complex real-world conditions. This requires maintaining accuracy while adapting to various system settings. Therefore, a core issue in my research is developing effective data processing methods to reduce model complexity while ensuring the applicability and stability of the model.
 
 ### 5. **Online System State Estimation (Digital Twin)**  
