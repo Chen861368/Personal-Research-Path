@@ -43,24 +43,11 @@ In my research, I am focused on addressing how to apply data-driven reduction te
 
 
 
+### 5. **Online System State Tracking (Digital Twin Model)**  
+Digital twin technology is one of the directions in my research that is closest to practical engineering applications. Structural health monitoring systems typically accumulate vast amounts of data, which contain important information about structural performance changes. Therefore, effectively extracting this potential structural performance information from the data is a key issue in my research. To achieve this, I primarily adopt **time-varying stochastic state-space models** rather than relying solely on deep learning. This approach helps better interpret the physical mechanisms behind the data, thereby improving the accuracy and reliability of the monitoring system. The completed work so far can be found here:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 5. **Online System State tracking (Digital Twin model)**  
-Digital twin technology is one of the directions in my research that is closest to practical engineering applications. Structural health monitoring systems typically accumulate vast amounts of data, which contain important information about structural performance changes. Therefore, effectively extracting this potential structural performance information from the data is a key issue in my research. To achieve this, I primarily adopt **time-varying stochastic state-space models** rather than relying solely on deep learning. This approach helps better interpret the physical mechanisms behind the data, thereby improving the accuracy and reliability of the monitoring system.
+- **Online Physics-Informed Dynamic Mode Decomposition: Theory and Applications** – The code and other related information are available at [GitHub Link](https://github.com/Chen861368/Online-Physics-Informed-Dynamic-Mode-Decomposition/tree/Here%E2%80%99s-the-code-modified-according-to-the-reviewer%E2%80%99s-comments)
+- **Adaptive Physics-Informed System Modeling for Online Structural Dynamic Simulation** – The code and other related information are available at [GitHub Link](https://github.com/Chen861368/Adaptive-Physics-Informed-System-Modeling)
 
 Structures are continuously subjected to the combined effects of external environments and loads over time, which inevitably leads to a gradual decline in their performance. The advantage of digital twin technology lies in its ability to integrate **time-varying stochastic state-space models** with real-time data, updating the structural state in real-time through simulation and feedback from the data, while predicting the future behavior of the structure. This method can effectively support decision-making in structural health monitoring, ensuring the safety and reliability of structures in complex environments.
 
