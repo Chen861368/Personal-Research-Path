@@ -41,7 +41,25 @@ Model order reduction is a popular research direction in fields such as computat
 
 In my research, I am focused on addressing how to apply data-driven reduction techniques in different physical environments and complex real-world conditions. This requires maintaining accuracy while adapting to various system settings. Therefore, a core issue in my research is developing effective data processing methods to reduce model complexity while ensuring the applicability and stability of the model.
 
-### 5. **Online System State Estimation (Digital Twin)**  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 5. **Online System State tracking (Digital Twin model)**  
 Digital twin technology is one of the directions in my research that is closest to practical engineering applications. Structural health monitoring systems typically accumulate vast amounts of data, which contain important information about structural performance changes. Therefore, effectively extracting this potential structural performance information from the data is a key issue in my research. To achieve this, I primarily adopt **time-varying stochastic state-space models** rather than relying solely on deep learning. This approach helps better interpret the physical mechanisms behind the data, thereby improving the accuracy and reliability of the monitoring system.
 
 Structures are continuously subjected to the combined effects of external environments and loads over time, which inevitably leads to a gradual decline in their performance. The advantage of digital twin technology lies in its ability to integrate **time-varying stochastic state-space models** with real-time data, updating the structural state in real-time through simulation and feedback from the data, while predicting the future behavior of the structure. This method can effectively support decision-making in structural health monitoring, ensuring the safety and reliability of structures in complex environments.
@@ -50,6 +68,13 @@ Structures are continuously subjected to the combined effects of external enviro
   <img src="system_modeling.png" alt="A schematic representation of the minimal realization time delay Koopman system identification algorithm process." width="60%" />
 </p>
 
+It is important to note that, under these specific conditions, we may not necessarily aim to obtain a nonlinear model, such as the Koopman operator model, which perfectly fits the data features, even though it provides some level of interpretability, let alone neural networks. The key challenge in this problem is tracking the changes in the system's state, so we need a time-varying model that can continuously express the underlying patterns of the current data. This allows researchers to infer whether the structure has changed compared to previous states and estimate the magnitude of those changes by observing model parameter variations. 
+
+Another advantage of using time-varying linear models is that even if we can achieve a perfect linear expression with the Koopman operator, it might be very high-dimensional, leading to low computational efficiency and making it difficult to meet real-time requirements. However, if we adopt time-varying linear models in combination with adaptive updating algorithms, we might be able to deploy the system locally and achieve edge computing capabilities.
+
+<p align="center">
+  <img src="regression_models.png" alt="A schematic representation of the minimal realization time delay Koopman system identification algorithm process." width="60%" />
+</p>
 
 
 
