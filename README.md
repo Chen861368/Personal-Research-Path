@@ -42,11 +42,9 @@ Digital twin technology is one of the directions in my research that is closest 
 
 Structures are continuously subjected to the combined effects of external environments and loads over time, which inevitably leads to a gradual decline in their performance. The advantage of digital twin technology lies in its ability to integrate **time-varying stochastic state-space models** with real-time data, updating the structural state in real-time through simulation and feedback from the data, while predicting the future behavior of the structure. This method can effectively support decision-making in structural health monitoring, ensuring the safety and reliability of structures in complex environments.
 
-### 6. **Modal Identification (Koopman Modal Decomposition)**
-Modal identification is an essential aspect of structural health monitoring, commonly referred to as **Koopman modal decomposition**. This method helps analyze and identify the dynamic behavior of structures under different load conditions.
+### 6. **Modal Identification (Koopman Modal Decomposition)**  
+Modal identification is an important aspect of structural health monitoring. This method helps analyze and identify the dynamic behavior of structures under different load conditions. Through modal analysis, we can extract information such as the structure's natural frequencies, mode shapes, and damping characteristics, all of which are critical for assessing the health of the structure. In fact, this can be viewed as a special case of Koopman modal decomposition.
 
+The Koopman modal decomposition method is particularly well-suited for modal identification of nonlinear systems because it can map nonlinear systems into a higher-dimensional space, where linear behavior is sought, thus simplifying the modal analysis process. This method provides valuable insights into structural health monitoring, especially when facing complex and dynamically changing load environments. It effectively helps identify structural changes and damage, providing reliable data support for structural safety assessment.
 
-## Research Goals and Applications
-
-My research aims to apply the above technologies to **structural health monitoring**, enhancing the safety, maintainability, and lifespan of structures through innovative system identification, order reduction, modal identification, and real-time state estimation techniques.
 
