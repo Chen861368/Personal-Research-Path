@@ -1,6 +1,6 @@
 # Personal Introduction
 
-I am a PhD student at **Harbin Institute of Technology (Shenzhen)**, enrolled in September 2023. My email is 23B954005@stu.hit.edu.cn, and my Google Scholar profile can be found at [https://scholar.google.com.hk/citations?user=d9qEdQIAAAAJ&hl=zh-CN](https://scholar.google.com.hk/citations?user=d9qEdQIAAAAJ&hl=zh-CN).
+I am a PhD student at **Harbin Institute of Technology (Shenzhen)**, enrolled in September 2023. My email is 23B954005@stu.hit.edu.cn, and my Google Scholar profile can be found at [https://scholar.google.com.hk/citations?user=d9qEdQIAAAAJ&hl=zh-CN](https://scholar.google.com.hk/citations?user=d9qEdQIAAAAJ&hl=zh-CN). If you are interested in the following areas of my research, please feel free to contact me if you are interested in collaborating or sharing insights on these topics.
 
 My doctoral research focuses on **Structural Health Monitoring (SHM)**, a rapidly growing interdisciplinary field that integrates concepts from mechanics, aerospace engineering, civil engineering, control systems, and signal processing. The primary objective of SHM is to assess and continuously monitor the structural performance and state changes of engineering systems, with the main research subjects being mechanical systems, spacecraft, and transportation infrastructure. The primary goal is similar to health monitoring in medical devices, with the key difference being the subject of study.
 
