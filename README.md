@@ -17,7 +17,8 @@ Currently, my research is concentrated in the following key areas:
 The theoretical foundation of my work is based on the **Koopman operator** and **optimal estimation** techniques, rooted in applied mathematics and statistical signal processing. One focuses on solving nonlinear problems, while the other addresses robustness against noise. While these theories offer elegant mathematical frameworks, translating them into practical applications can be challenging due to the fact that real-world observation data is often discrete and typically lacks accurate prior physical information. 
 
 In order to bridge the gap between theory and practice, I primarily employ **finite element models** to provide initial physical information, and then use **convex optimization methods** combined with data to correct the initially inaccurate physical model. By leveraging domain expertise, I formulate the corresponding optimization problems—specifically, **convex optimization problems**—and develop efficient convex optimization algorithms for application to real-world challenges in structural health monitoring.
-A convex optimization problem (or program) is:
+
+The primary advantage of convex optimization in practical physical problems often lies in its ability to guarantee global optima. Specifically, a convex optimization problem (or program) is defined as follows:
 
 $$
 \begin{aligned}
@@ -27,8 +28,14 @@ $$
 \end{aligned}
 $$
 
-where $f(x)$ and $h_i(x),\ i=1,\dots,m$ are all convex, and $\ell_j(x),\ j=1,\dots,r$ are affine functions. 
+where $f(x)$ and $h_i(x),\quad i=1,\dots,m$ are convex functions, and $\ell_j(x),\quad j=1,\dots,r$ are affine functions.
+Based on duality theory, when strong duality holds, an equivalent formulation can be derived through the Lagrangian. The Lagrangian for a given optimization problem is defined as:
 
+$$
+L(x, u, v) = f(x) + \sum_{i=1}^{m} u_i \, h_i(x) + \sum_{j=1}^{r} v_j \, \ell_j(x)
+$$
+
+where $u_i \geq 0$ for all $i$, reflecting the non-negativity constraint on the dual variables corresponding to the inequality constraints. For those who frequently work with machine learning and deep learning, such optimization formulations may be more familiar.
 
 ---
 ### Some Thoughts on the Above Research Areas/Methods/Theories
