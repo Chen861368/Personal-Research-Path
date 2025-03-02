@@ -17,6 +17,29 @@ Currently, my research is concentrated in the following key areas:
 The theoretical foundation of my work is based on the **Koopman operator** and **optimal estimation** techniques, rooted in applied mathematics and statistical signal processing. One focuses on solving nonlinear problems, while the other addresses robustness against noise. While these theories offer elegant mathematical frameworks, translating them into practical applications can be challenging due to the fact that real-world observation data is often discrete and typically lacks accurate prior physical information. 
 
 In order to bridge the gap between theory and practice, I primarily employ **finite element models** to provide initial physical information, and then use **convex optimization methods** combined with data to correct the initially inaccurate physical model. By leveraging domain expertise, I formulate the corresponding optimization problems—specifically, **convex optimization problems**—and develop efficient convex optimization algorithms for application to real-world challenges in structural health monitoring.
+A convex optimization problem (or program) is:
+
+$$
+\begin{aligned}
+\text{minimize}\quad & f(x) \\
+\text{subject to}\quad & h_i(x) \le 0,\quad i = 1,\dots,m \\
+& \ell_j(x) = 0,\quad j = 1,\dots,r
+\end{aligned}
+$$
+
+where $f(x)$ and $h_i(x),\ i=1,\dots,m$ are all convex, and $\ell_j(x),\ j=1,\dots,r$ are affine functions. 
+The Lagrangian for a given optimization problem is defined as
+
+$$
+\mathcal{L}(x, u, v) 
+= f(x) 
++ \sum_{i=1}^{m} u_i \, h_i(x) 
++ \sum_{j=1}^{r} v_j \, \ell_j(x)
+
+$$
+where $u_i \ge 0$ for all $i$, reflecting the non-negativity constraint on the dual variables corresponding to inequality constraints.
+
+
 
 ---
 
