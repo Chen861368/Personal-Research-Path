@@ -40,7 +40,7 @@ where $f(x)$ and $h_i(x),\quad i=1,\dots,m$ are convex functions, and $\ell_j(x)
 Based on duality theory, when strong duality holds, an equivalent formulation can be derived through the Lagrangian. The Lagrangian for a given optimization problem is defined as:
 
 $$
-L(x, u, v) = f(x) + \sum_{i=1}^{m} u_i \, h_i(x) + \sum_{j=1}^{r} v_j \, \ell_j(x)
+L(x, u, v) = f(x) + \sum_{i=1}^{m} u_i  h_i(x) + \sum_{j=1}^{r} v_j  \ell_j(x)
 $$
 
 where $u_i \geq 0$ for all $i$, reflecting the non-negativity constraint on the dual variables corresponding to the inequality constraints. For those who frequently work with machine learning and deep learning, such optimization formulations may be more familiar.
