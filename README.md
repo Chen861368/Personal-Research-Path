@@ -45,8 +45,55 @@ This method relies on the Koopman operator theory, where the state vector of a d
 I use it to solve some very complex system identification problems with highly nonlinear characteristics. It is highly effective in nonlinear system identification and is currently emerging as a popular and modern research topic. This method has proven highly effective for solving complex nonlinear systems that are difficult to address with traditional approaches. It provides a powerful tool for analyzing and controlling dynamic systems, with vast potential for real-world applications. Particularly in fields such as aerospace, robotics, and intelligent transportation, it holds great promise for advancing system identification and control strategies.
 
 ### 3. **Optimal Estimation**
-In practice, monitoring data is often contaminated by noise. To evaluate the statistical performance of estimators derived from such data, it is essential to model the noise.
-Optimal estimation is a mathematical technique used to estimate the system state, with the aim of achieving the most accurate estimation using available observation data, system models, and noise characteristics. The objective is to minimize the variance of the estimation error, typically achieved through methods like least squares and Kalman filtering. Optimal estimation is widely used in dynamic systems for real-time state tracking and has broad applications in fields such as control systems, signal processing, and communications.
+
+In practice, monitoring data is often contaminated by noise. To evaluate the statistical performance of estimators derived from such data, it is essential to model the noise. The estimation problem is mathematically formulated as determining parameters $\theta$ from a discrete dataset $\{x_0, x_1, \dots, x_N\}$, associated with a signal following a stochastic model $x \sim f(x, \theta)$
+
+- **The Mathematical Estimation Problem** encompasses the challenge of inferring unknown parameters or system states from observational data.  
+- **Digital computers** allow us to analyze sampled data, leading to the problem of estimating parameters from a discrete dataset.  
+- **Parameter $\theta$** is deterministic in classical estimation and random in Bayesian estimation.
+
+The aim is to find $\theta$ or construct an estimator $\hat{\theta}$ using the function $g$, expressed as:
+
+$$
+\hat{\theta} = g(x_0, x_1, \dots, x_N)
+$$
+
+Here, the function $g$ is designed to estimate the parameters $\theta$ from the data. Often, the main trick is finding the right mathematical formulation of your estimation problem:
+
+- **Function**: $x \sim f(x, \theta)$ Identify the function that best represents the data or the system.
+
+- **Metric**: $L(\theta, \hat{\theta})$ Choose a loss or cost function $L$ that quantifies the error or difference between the estimated parameters $\hat{\theta}$ and the true parameters $\theta$.
+
+- **Constraints**: $R(\theta)$ Define any constraints $R$ that the parameters $\theta$ must satisfy. These could be physical constraints, regulatory requirements, or computational limitations.
+
+Once the function, metric, and constraints are defined, the next step is to choose the best algorithms that exploit these definitions to solve the estimation problem effectively. 
+Therefore, optimal estimation is a mathematical technique used to estimate the parameters, with the aim of achieving the most accurate estimation using available observation data, system models $f(x, \theta)$, metric $L(\theta, \hat{\theta})$, and constraints $R(\theta)$. 
+
+The objective is to minimize the error quantified by the loss function, typically achieved through methods like least squares and Kalman filtering. Optimal estimation is widely used in dynamic systems for real-time state tracking and has broad applications in fields such as control systems, signal processing, and communications.
+One commonly used loss function is the Mean Square Error (MSE), defined as:
+
+$$
+\text{MSE}_{\text{classical}}(\hat{\theta}) = E_x\Big[(\hat{\theta} - \theta)^2\Big] = \int (\hat{\theta} - \theta)^2 \, p(x) \, dx,
+$$
+
+and
+
+$$
+\text{MSE}_{\text{Bayesian}}(\hat{\theta}) =E_{x,\theta}[(\hat{\theta} - \theta)^2]= \int (\hat{\theta} - \theta)^2 p(\theta,x) \, d\theta dx
+$$
+
+The classical approach to MSE does not yield an optimal estimator since the true value of $\theta$ is unknown, making the calculation of the loss function impossible.
+However, the Bayesian MSE provides a mechanism to obtain the optimal estimator through conditional expectation, taking into account prior knowledge and data.
+
+$$
+\hat{\theta} = E(\theta \mid x) = \int \theta \cdot p(\theta \mid x) \, d\theta.
+$$
+
+where
+
+$$
+p(\theta \mid x) = \frac{p(x \mid \theta) \, p(\theta)}{p(x)} = \frac{p(x \mid \theta) \, p(\theta)}{\int p(x \mid \theta) \, p(\theta) \, d\theta}.
+$$
 
 In recent years, however, this approach may have lost its prominence, largely due to the powerful nonlinear modeling capabilities of deep neural networks and the increasing computational support from companies like NVIDIA. Research focus has increasingly shifted toward deep learning. In such cases, analyzing the statistical performance of estimators becomes challenging. Nevertheless, I continue to analyze it through optimal estimation theory because, for certain applications, the well-established mathematical foundation of optimal estimation provides a robust framework for understanding and enhancing estimation accuracy.
 
