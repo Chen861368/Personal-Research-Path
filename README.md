@@ -1,4 +1,4 @@
-# Personal Introduction
+# Personal Academic Research Introduction
 
 I am a PhD student at **Harbin Institute of Technology (Shenzhen)**, enrolled in September 2023. My email is 23B954005@stu.hit.edu.cn, and my Google Scholar profile can be found at [Google Scholar ](https://scholar.google.com.hk/citations?user=d9qEdQIAAAAJ&hl=zh-CN). If you are interested in the following areas of my research, please feel free to contact me if you are interested in collaborating or sharing insights on these topics.
 
@@ -57,12 +57,19 @@ From my perspective, I have been exploring how to use noisy data to estimate the
 
 
 - **Sparse State Vector Data**:  
-  For real-world physical systems, sensor placements are often limited and the cost of long-term maintenance is high, so only a subset of the system’s states can be sampled. Although the sampling interval may be very short, the total sampling duration can be very long, leading to a "fat matrix." Moreover, even when complete state vector data is available, researchers often prefer to work with only a portion of the data to improve computational efficiency or reduce storage costs, and then later use techniques such as compressed sensing to recover the complete dataset. This scenario overlaps with the issues encountered in **Model Order Reduction**.  
-  - The major challenge here is accurately identifying system characteristics from sparse and possibly incomplete data. Due to the incompleteness, latent variables may be present, and inferring the full state vector characteristics from partial data to extract underlying information becomes a significant problem.
-  - Additionally, when the sampling data spans a very long time period and the dataset becomes enormous, addressing computational efficiency issues associated with a "fat matrix" is a further challenge. In such cases, capturing the dynamic changes of the system within each time segment leads to the extended problem of online system identification.
- 
+  For real-world physical systems, sensor placements are often limited and the cost of long-term maintenance is high, so only a subset of the system’s states can be sampled. Although the sampling interval may be very short, the total sampling duration can be very long, leading to a "fat matrix." Moreover, even when complete state vector data is available, researchers often prefer to work with only a portion of the data to improve computational efficiency or reduce storage costs, and then later use techniques such as compressed sensing to recover the complete dataset. This scenario overlaps with the issues encountered in **Model Order Reduction**.
+
   <p align="center">
   <img src="MRTK_algorithm.png" alt="A schematic representation of the minimal realization time delay Koopman system identification algorithm process." width="70%" />
+</p>
+
+
+For my research in structural health monitoring, complete monitoring data is usually unavailable, and we must rely on sparse measurement data to infer changes in the structure's state. This data sparsity poses a number of challenges and issues:
+  - The primary challenge lies in accurately identifying the system's characteristics from sparse and potentially incomplete data. With a limited number of measurement points, the data may not fully reflect the overall state of the structure, potentially introducing latent variables (i.e., the full state vector). This makes it very difficult to directly infer the structural state characteristics from partial data. In such cases, it is necessary to design more efficient and robust algorithms that can fully exploit the physical information and statistical properties embedded in the limited data.
+  - When the sampling data spans a very long time period, even though each time instance may have few measurements, the overall dataset can become extremely large, forming what is known as a "fat matrix." In such scenarios, in addition to addressing the issue of data sparsity, one must also contend with computational efficiency challenges arising from the large volume of data. In particular, to capture the dynamic changes of the system within each time segment, efficient online system identification is required, which demands real-time data processing.
+
+  <p align="center">
+  <img src="online_algorithm.png" alt="A schematic representation of the minimal realization time delay Koopman system identification algorithm process." width="70%" />
 </p>
 
 In summary, data-driven system identification—whether dealing with complete monitoring data or sparse sampling data—requires a combination of physical theory and statistical methods to design appropriate mathematical models, fully consider the impact of noise, and leverage modern optimization techniques and machine learning methods. My research is dedicated to tackling these fundamental scientific challenges, aiming to bridge the gap between theory and practice and to achieve more accurate and robust system identification results in real-world engineering applications.
@@ -124,7 +131,7 @@ In recent years, however, this approach may have lost its prominence, largely du
 
 
 
-
+---
 
 ## Key Research Directions and Technical Approaches
 
