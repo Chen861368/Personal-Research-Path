@@ -48,7 +48,12 @@ From my perspective, I have been exploring how to use noisy data to estimate the
 
 - **Complete State Vector Data**:  
   In some cases, the focus is on theoretical investigations or scenarios where obtaining experimental data is extremely challenging. For example, in the analysis of robot or UAV trajectory data, the cost of experiments can be high; similarly, repeated experiments on rare events like typhoons or earthquakes are practically infeasible. As a result, many studies rely on numerical simulation data based on physical laws to validate methods and theories.  
-  - The pursuit of extracting physical laws from data has been a relentless human endeavor—from the ancient Kepler's three laws and Newton's second law to the current era of extensive data mining using machine learning algorithms. Common methods include symbolic regression, sparsity-based approaches, and modeling based on state-space equations.  
+  - The pursuit of extracting physical laws from data has been a relentless human endeavor—from the ancient Kepler's three laws and Newton's second law to the current era of extensive data mining using machine learning algorithms. Common methods include symbolic regression, sparsity-based approaches, and modeling based on state-space equations.
+
+<p align="center">
+  <img src="data_driven_methods.png" alt="A schematic representation of the minimal realization time delay Koopman system identification algorithm process." width="60%" />
+</p>
+
   - Furthermore, certain complex problems (such as high-fidelity computational fluid dynamics simulations) involve data with extremely high dimensions. Due to limited computational resources, the sampling time steps are often short, resulting in a so-called "thin matrix." In such cases, **Model Order Reduction** is usually required—that is, developing techniques to simplify complex system models while maintaining acceptable accuracy for more efficient simulation and real-time applications.
 
 - **Sparse State Vector Data**:  
