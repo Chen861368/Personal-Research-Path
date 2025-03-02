@@ -79,7 +79,7 @@ $$
 and
 
 $$
-\text{MSE}_{\text{Bayesian}}(\hat{\theta}) =E_{x,\theta}[(\hat{\theta} - \theta)^2]= \int (\hat{\theta} - \theta)^2 p(\theta,x) \, d\theta dx
+\text{MSE}_{\text{Bayesian}}(\hat{\theta}) =  E\_{x,\theta}\Big[(\hat{\theta} - \theta)^2\Big]= \int (\hat{\theta} - \theta)^2 p(\theta,x) \, d \theta dx
 $$
 
 The classical approach to MSE does not yield an optimal estimator since the true value of $\theta$ is unknown, making the calculation of the loss function impossible.
