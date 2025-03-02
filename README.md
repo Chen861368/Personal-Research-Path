@@ -1,3 +1,11 @@
+## Table of Contents
+* [Personal Academic Research Introduction](#personal-academic-research-introduction)
+* [Some Thoughts on the Research Areas/Methods/Theories I Am Currently Pursuing](#some-thoughts-on-the-research-areasmethodstheories-i-am-currently-pursuing)
+* [Key Research Directions and Technical Approaches](#key-research-directions-and-technical-approaches)
+
+
+
+
 # Personal Academic Research Introduction
 
 I am a PhD student at **Harbin Institute of Technology (Shenzhen)**, enrolled in September 2023. My email is 23B954005@stu.hit.edu.cn, and my Google Scholar profile can be found at [Google Scholar ](https://scholar.google.com.hk/citations?user=d9qEdQIAAAAJ&hl=zh-CN). If you are interested in the following areas of my research, please feel free to contact me if you are interested in collaborating or sharing insights on these topics.
@@ -38,7 +46,7 @@ $$
 where $u_i \geq 0$ for all $i$, reflecting the non-negativity constraint on the dual variables corresponding to the inequality constraints. For those who frequently work with machine learning and deep learning, such optimization formulations may be more familiar.
 
 ---
-# Some Thoughts on the Above Research Areas/Methods/Theories
+# Some Thoughts on the 自己正在进行的 Research Areas/Methods/Theories
 
 ## 1. **Data-driven System Identification**:  
 System identification is an age-old subject with a wealth of research results. It can be classified from multiple perspectives—for instance, whether the system is stochastic or deterministic, linear or nonlinear, time-varying or not, and whether it incorporates physical information. Each classification method has its own emphasis, and overall, there is a rich accumulation of theoretical and practical experience.  
