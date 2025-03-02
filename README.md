@@ -65,9 +65,19 @@ Another advantage of using time-varying linear models is that even if we can ach
 
 
 
-### 6. **Modal Identification (Koopman Modal Decomposition)**  
-Modal identification is an important aspect of structural health monitoring. This method helps analyze and identify the dynamic behavior of structures under different load conditions. Through modal analysis, we can extract information such as the structure's natural frequencies, mode shapes, and damping characteristics, all of which are critical for assessing the health of the structure. In fact, this can be viewed as a special case of Koopman modal decomposition.
 
-The Koopman modal decomposition method is particularly well-suited for modal identification of nonlinear systems because it can map nonlinear systems into a higher-dimensional space, where linear behavior is sought, thus simplifying the modal analysis process. This method provides valuable insights into structural health monitoring, especially when facing complex and dynamically changing load environments. It effectively helps identify structural changes and damage, providing reliable data support for structural safety assessment.
+
+### 6. **Modal Identification (Koopman Modal Decomposition)**
+
+Modal identification is an age-old topic; scholars have long studied how to perform modal analysis on linear structural dynamic systems to extract key information such as natural frequencies, mode shapes, and damping characteristics. This method is a core component of modern structural health monitoring, used to analyze and identify the dynamic behavior of structures under various loading conditions, thereby enabling a more accurate assessment of structural health. From a more modern and general perspective, this form of modal analysis in structural dynamics can be viewed as a special case of Koopman modal decomposition.
+
+The Koopman modal decomposition method primarily targets the modal identification of nonlinear systems, making it applicable to a broader range of nonlinear dynamic systems, rather than being limited to linear structural dynamics. The most attractive aspect of the Koopman operator is its ability to map nonlinear systems into a high-dimensional space, where linear behavior is sought, allowing us to leverage the well-established theories of linear modal analysis.
+
+Assuming we have obtained the Koopman operator of a dynamic system, all that is needed is to perform an eigendecomposition on this linear operator to extract the Koopman modal parameters. Although there are also some methods specifically designed for modal analysis—such as using sparsity to select dominant modes—I believe the primary challenge in modal analysis lies in constructing an accurate Koopman linear operator from data that may contain noise. Without a sufficiently accurate Koopman operator, it is hard to trust that algorithms applied to its eigendecomposition can yield precise Koopman frequencies and modes. Thus, this challenge overlaps with the difficulties encountered in system identification research.
+
+Given these challenges, and considering its broad application prospects, elegant theoretical framework, and strong adaptability, the Koopman modal decomposition method is now a very promising research direction. Many outstanding researchers are actively working in this area. In the field of structural health monitoring, it can offer valuable insights, particularly in complex and dynamically changing loading environments, effectively aiding in the identification of structural changes and damage, and thereby providing reliable data for structural safety assessments.
+
+
+
 
 
