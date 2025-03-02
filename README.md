@@ -46,7 +46,7 @@ $$
 where $u_i \geq 0$ for all $i$, reflecting the non-negativity constraint on the dual variables corresponding to the inequality constraints. For those who frequently work with machine learning and deep learning, such optimization formulations may be more familiar.
 
 ---
-# Some Thoughts on the 自己正在进行的 Research Areas/Methods/Theories
+# Some Thoughts on the Research Areas/Methods/Theories I Am Currently Pursuing
 
 ## 1. **Data-driven System Identification**:  
 System identification is an age-old subject with a wealth of research results. It can be classified from multiple perspectives—for instance, whether the system is stochastic or deterministic, linear or nonlinear, time-varying or not, and whether it incorporates physical information. Each classification method has its own emphasis, and overall, there is a rich accumulation of theoretical and practical experience.  
