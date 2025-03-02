@@ -73,13 +73,13 @@ The objective is to minimize the error quantified by the loss function, typicall
 One commonly used loss function is the Mean Square Error (MSE), defined as:
 
 $$
-\text{MSE}_{\text{classical}}(\hat{\theta}) = E_x\Big[(\hat{\theta} - \theta)^2\Big] = \int (\hat{\theta} - \theta)^2 \, p(x) \, dx,
+\text{MSE}_{\text{classical}}(\hat{\theta}) = E_x\Big[(\hat{\theta} - \theta)^2\Big] = \int (\hat{\theta} - \theta)^2  p(x)  dx,
 $$
 
 and
 
 $$
-\text{MSE}_{\text{Bayesian}}(\hat{\theta}) =  E\_{x,\theta}\Big[(\hat{\theta} - \theta)^2\Big]= \int (\hat{\theta} - \theta)^2 p(\theta,x) \, d \theta dx
+\text{MSE}_{\text{Bayesian}}(\hat{\theta}) =  E\_{x,\theta}\Big[(\hat{\theta} - \theta)^2\Big]= \int (\hat{\theta} - \theta)^2 p(\theta,x)  d \theta dx
 $$
 
 The classical approach to MSE does not yield an optimal estimator since the true value of $\theta$ is unknown, making the calculation of the loss function impossible.
