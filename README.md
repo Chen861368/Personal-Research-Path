@@ -6,7 +6,7 @@ My doctoral research focuses on **Structural Health Monitoring (SHM)**, a rapidl
 
 Currently, my research is concentrated in the following key areas:
 
-- **Data-driven linear/nonlinear system identification**: I am exploring methods for identifying the dynamics of structures using data, including both linear and nonlinear systems. This work aims to enhance the accuracy and reliability of system models by using available observational data.
+- **Data-driven system identification**: I am exploring methods for identifying the dynamics of structures using data, including both linear and nonlinear systems. This work aims to enhance the accuracy and reliability of system models by using available observational data.
 
 - **Model order reduction**: This involves developing techniques to simplify complex system models without significantly compromising accuracy, allowing for more efficient simulations and real-time applications.
 
