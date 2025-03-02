@@ -1,10 +1,10 @@
-## Table of Contents
+# Table of Contents
 * [Personal Academic Research Introduction](#personal-academic-research-introduction)
 * [Some Thoughts on the Research Areas/Methods/Theories I Am Currently Pursuing](#some-thoughts-on-the-research-areasmethodstheories-i-am-currently-pursuing)
 * [Key Research Directions and Technical Approaches](#key-research-directions-and-technical-approaches)
+* [References](#References)
 
-
-
+---
 
 # Personal Academic Research Introduction
 
@@ -164,9 +164,6 @@ In my research, I am focused on addressing how to apply data-driven reduction te
 ## 4. **Online System State Tracking (Digital Twin Model)**  
 Digital twin technology is one of the directions in my research that is closest to practical engineering applications. Structural health monitoring systems typically accumulate vast amounts of data, which contain important information about structural performance changes. Therefore, effectively extracting this potential structural performance information from the data is a key issue in my research. To achieve this, I primarily adopt **time-varying stochastic state-space models** rather than relying solely on deep learning. This approach helps better interpret the physical mechanisms behind the data, thereby improving the accuracy and reliability of the monitoring system. The completed work so far can be found here:
 
-- **Online Physics-Informed Dynamic Mode Decomposition: Theory and Applications** – The code and other related information are available at [GitHub Link](https://github.com/Chen861368/Online-Physics-Informed-Dynamic-Mode-Decomposition/tree/Here%E2%80%99s-the-code-modified-according-to-the-reviewer%E2%80%99s-comments)
-- **Adaptive Physics-Informed System Modeling for Online Structural Dynamic Simulation** – The code and other related information are available at [GitHub Link](https://github.com/Chen861368/Adaptive-Physics-Informed-System-Modeling)
-
 Structures are continuously subjected to the combined effects of external environments and loads over time, which inevitably leads to a gradual decline in their performance. The advantage of digital twin technology lies in its ability to integrate **time-varying stochastic state-space models** with real-time data, updating the structural state in real-time through simulation and feedback from the data, while predicting the future behavior of the structure. This method can effectively support decision-making in structural health monitoring, ensuring the safety and reliability of structures in complex environments.
 
 <p align="center">
@@ -195,7 +192,18 @@ Assuming we have obtained the Koopman operator of a dynamic system, all that is 
 
 Given these challenges, and considering its broad application prospects, elegant theoretical framework, and strong adaptability, the Koopman modal decomposition method is now a very promising research direction. Many outstanding researchers are actively working in this area. In the field of structural health monitoring, it can offer valuable insights, particularly in complex and dynamically changing loading environments, effectively aiding in the identification of structural changes and damage, and thereby providing reliable data for structural safety assessments.
 
+---
 
+# References
+
+- **Online Physics-Informed Dynamic Mode Decomposition: Theory and Applications**  
+  The code and other related information are available at the [paper](https://arxiv.org/abs/2412.03609) and [GitHub Link](https://github.com/Chen861368/Online-Physics-Informed-Dynamic-Mode-Decomposition/tree/Here%E2%80%99s-the-code-modified-according-to-the-reviewer%E2%80%99s-comments).
+
+- **Adaptive Physics-Informed System Modeling for Online Structural Dynamic Simulation**  
+  The code and other related information are available at the [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5097818) and [GitHub Link](https://github.com/Chen861368/Adaptive-Physics-Informed-System-Modeling).
+
+- **Minimal Realization Time-Delay Koopman Analysis for Nonlinear System Identification**  
+  The code and other related information are available at the [paper](https://www.researchsquare.com/article/rs-6029043/v1) and [GitHub Link](https://github.com/Chen861368/Minimal-Realization-Time-Delay-Koopman-Analysis-for-Nonlinear-System-Identification).
 
 
 
