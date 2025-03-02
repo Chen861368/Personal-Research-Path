@@ -28,17 +28,6 @@ $$
 $$
 
 where $f(x)$ and $h_i(x),\ i=1,\dots,m$ are all convex, and $\ell_j(x),\ j=1,\dots,r$ are affine functions. 
-The Lagrangian for a given optimization problem is defined as
-
-$$
-\mathcal{L}(x, u, v) 
-= f(x) 
-+ \sum_{i=1}^{m} u_i \, h_i(x) 
-+ \sum_{j=1}^{r} v_j \, \ell_j(x)
-
-$$
-where $u_i \ge 0$ for all $i$, reflecting the non-negativity constraint on the dual variables corresponding to inequality constraints.
-
 
 
 ---
