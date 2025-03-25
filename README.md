@@ -157,6 +157,13 @@ This approach originally stems from control theory, primarily relying on the ort
 
 I apply this method to data-driven modeling of monitored structures, and it can also have broad applications in high-precision system modeling and signal processing. This approach enables the extraction of true system dynamics from noisy data, providing an effective solution for engineering problems that require precise identification and control.
 
+
+  <p align="center">
+  <img src="SSI.png" alt="A schematic representation of the minimal realization time delay Koopman system identification algorithm process." width="70%" />
+</p>
+
+
+
 ## 2. **Nonlinear System Identification Based on Koopman Operator Theory**
 This method relies on the Koopman operator theory, where the state vector of a dynamic system is mapped into a high-dimensional (and potentially infinite-dimensional) space, seeking a linear representation within that space. This approach is similar to Kernel methods, and I consider it an extension of classical linear state-space models. Since state-space equations can also be viewed as a method of mapping monitoring data into high-dimensional space, the entire process is linear, but the observation function of the Koopman operator can be arbitrary. Given its strong mathematical foundation, this method provides new ways to interpret the dynamic characteristics of systems and is well-suited for integration with control methods like Model Predictive Control (MPC).
 
