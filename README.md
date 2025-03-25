@@ -201,6 +201,14 @@ Assuming we have obtained the Koopman operator of a dynamic system, all that is 
 
 Given these challenges, and considering its broad application prospects, elegant theoretical framework, and strong adaptability, the Koopman modal decomposition method is now a very promising research direction. Many outstanding researchers are actively working in this area. In the field of structural health monitoring, it can offer valuable insights, particularly in complex and dynamically changing loading environments, effectively aiding in the identification of structural changes and damage, and thereby providing reliable data for structural safety assessments.
 
+
+
+  <p align="center">
+  <img src="SSI_modal.png" alt="A schematic representation of the minimal realization time delay Koopman system identification algorithm process." width="70%" />
+</p>
+
+
+
 ---
 
 # References
