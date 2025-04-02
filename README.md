@@ -229,5 +229,6 @@ Given these challenges, and considering its broad application prospects, elegant
 - **Minimal Realization Time-Delay Koopman Analysis for Nonlinear System Identification**  
   The code and other related information are available at the [paper](https://www.researchsquare.com/article/rs-6029043/v1) and [GitHub Link](https://github.com/Chen861368/Minimal-Realization-Time-Delay-Koopman-Analysis-for-Nonlinear-System-Identification).
 
-
+- **Principal Component Stochastic Subspace Identification for Output-Only Modal Analysis**  
+  The code and other related information are available at the [paper](https://arxiv.org/abs/2504.00317) and [GitHub Link](https://github.com/Chen861368/Principal-Component-Stochastic-Subspace-Identification-for-Output-Only-Modal-Analysis).
 
