@@ -162,11 +162,27 @@ The following figure illustrates the **Principal Component Stochastic Subspace I
   <img src="SSI.png" alt="Principal Component Stochastic Subspace Identification Workflow" width="70%" />
 </p>
 
-Although the model obtained through this method already achieves high identification accuracy, it can be further refined. Specifically, it can serve as an initial model for online system identification using the **Adaptive Physics-Informed System Modeling (APSM)** approach. As shown in the figure below and proven in the paper, this method achieves optimal estimation accuracy through real-time updates with physical constraints.
+Although the model obtained through this method already achieves high identification accuracy, it can be further refined. Specifically, it can serve as an initial model for online system identification using the **Adaptive Physics-Informed System Modeling (APSM)** approach.  
+
+One of the key advantages of APSM is its ability to handle **nonlinear systems**, where the time-varying state-space equations are theoretically equivalent to the **Jacobian matrices** of the underlying nonlinear dynamics. As shown in the figure below and proven in our paper, this method achieves **optimal estimation accuracy** through real-time updates with embedded physical constraints.
 
 <p align="center">
-  <img src="APSM.png" alt="Principal Component Stochastic Subspace Identification Workflow" width="70%" />
+  <img src="APSM.png" alt="" width="70%" />
 </p>
+
+While the above method is sufficient for structural health monitoring, scenarios involving external excitation or active control require explicit input modeling. To address this, we propose the **Adaptive Physics-Informed System Modeling with Control (APSMC)** framework.
+
+APSMC significantly extends the applicability of APSM by incorporating external inputs and enabling identification under **arbitrary white noise distributions** and **input–output data conditions**. The overall process is illustrated in the following diagrams:
+
+<p align="center">
+  <img src="SSI_APSMC.png" alt="" width="70%" />
+</p>
+
+<p align="center">
+  <img src="APSMCC.png" alt="" width="70%" />
+</p>
+
+---
 
 
 ## 2. **Nonlinear System Identification Based on Koopman Operator Theory**
