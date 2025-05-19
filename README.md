@@ -253,3 +253,5 @@ Given these challenges, and considering its broad application prospects, elegant
 - **Principal Component Stochastic Subspace Identification for Output-Only Modal Analysis**  
   The code and other related information are available at the [paper](https://arxiv.org/abs/2504.00317) and [GitHub Link](https://github.com/Chen861368/Principal-Component-Stochastic-Subspace-Identification-for-Output-Only-Modal-Analysis).
 
+- **Adaptive Physics-Informed System Modeling with Control for Nonlinear Structural System Estimation**  
+  The code and other related information are available at the [paper](https://doi.org/10.48550/arXiv.2505.06525) and [GitHub Link](https://github.com/Chen861368/Adaptive-Physics-Informed-System-Modeling-with-Control-for-Nonlinear-Structural-Dynamics-Estimation).
