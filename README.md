@@ -145,9 +145,6 @@ $$
 
 In recent years, however, this approach may have lost its prominence, largely due to the powerful nonlinear modeling capabilities of deep neural networks and the increasing computational support from companies like NVIDIA. Research focus has increasingly shifted toward deep learning. In such cases, analyzing the statistical performance of estimators becomes challenging. Nevertheless, I continue to analyze it through optimal estimation theory because, for certain applications, the well-established mathematical foundation of optimal estimation provides a robust framework for understanding and enhancing estimation accuracy.
 
-
-
-
 ---
 
 # Key Research Directions and Technical Approaches
@@ -155,13 +152,21 @@ In recent years, however, this approach may have lost its prominence, largely du
 ## 1. **System Identification Based on Stochastic Subspace Methods**
 This approach originally stems from control theory, primarily relying on the orthogonality between the signal subspace and the noise subspace to eliminate noise and achieve high-precision system identification. By assuming the noise is white noise and that the system state vector and noise exhibit ergodic properties, this method guarantees convergence to the state-space equation estimate with completely removed noise when the monitoring data is infinite.
 
-I apply this method to data-driven modeling of monitored structures, and it can also have broad applications in high-precision system modeling and signal processing. This approach enables the extraction of true system dynamics from noisy data, providing an effective solution for engineering problems that require precise identification and control.
+I apply this method to data-driven modeling of monitored structures, and it can also have broad applications in high-precision system modeling and signal processing. By extracting the underlying system dynamics from noisy measurements, this approach offers a robust solution for engineering problems requiring accurate identification and control.
 
+---
 
-  <p align="center">
-  <img src="SSI.png" alt="A schematic representation of the minimal realization time delay Koopman system identification algorithm process." width="70%" />
+The following figure illustrates the **Principal Component Stochastic Subspace Identification (PCSSI)** method I developed. It first extracts the principal components of the signal subspace from the observed data, then projects the data onto this subspace to suppress noise. The resulting model is used for modal identification:
+
+<p align="center">
+  <img src="SSI.png" alt="Principal Component Stochastic Subspace Identification Workflow" width="70%" />
 </p>
 
+Although the model obtained through this method already achieves high identification accuracy, it can be further refined. Specifically, it can serve as an initial model for online system identification using the **Adaptive Physics-Informed System Modeling (APSM)** approach. As shown in the figure below and proven in the paper, this method achieves optimal estimation accuracy through real-time updates with physical constraints.
+
+<p align="center">
+  <img src="APSM.png" alt="Principal Component Stochastic Subspace Identification Workflow" width="70%" />
+</p>
 
 
 ## 2. **Nonlinear System Identification Based on Koopman Operator Theory**
