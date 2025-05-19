@@ -50,11 +50,14 @@ where $u_i \geq 0$ for all $i$, reflecting the non-negativity constraint on the 
 
 ## 1. **Data-driven System Identification**:
 
-System identification is an age-old subject with a wealth of research results. It can be classified from multiple perspectives—for instance, whether the system is:
-- stochastic or deterministic,
-- linear or nonlinear,
-- time-varying or not,
-- and whether it incorporates physical information or not.
+System identification is a long-established research topic with a rich body of literature. It can be classified from several perspectives, such as whether the system is:
+
+- **Stochastic** or **deterministic**
+- **Linear** or **nonlinear**
+- **Time-invariant** or **time-varying**
+- **With or without physical priors** (i.e., physics-informed vs. purely data-driven)
+- **Interpretable** or **black-box** in nature
+  
 
 Each classification method has its own emphasis, and overall, there is a rich accumulation of theoretical and practical experience. However, when it comes to addressing real-world problems (especially in cases where ground truth is unavailable), these classifications can become ambiguous.
 
